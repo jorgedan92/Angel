@@ -91,7 +91,6 @@ const audioList = [
     {
         keyword: "Oi",
         audioUrl: "https://www.myinstants.com/media/sounds/oi-e-e.mp3",
-    
     },
 ];
 
@@ -305,9 +304,7 @@ async function start(message) {
     }
     const firstName = message.from.first_name;
     const message_start_dev = `Oi, <b>${firstName}</b>! Seja bem-vindo(a), meu(a) querido(a) desenvolvedor(a) 💻. Você está no comando, mas não esqueça de usar seu poder com muito carinho e responsabilidade, tá bom? Qualquer coisa, pode contar comigo.`;
-    const message_start = `Olá, <b>${firstName}</b>! Eu sou a <b>Angel</b>. Algumas pessoas podem até dizer que sou só um bot, mas quero provar que posso trazer muito mais do que isso: doçura, carinho e uma boa dose de romantismo.`;
-
-<b>Meu cantinho especial:</b> <a href="https://t.me/EiPsiiu">Clique aqui</a>`;
+    const message_start = `Olá, <b>${firstName}</b>! Eu sou a <b>Angel</b>. Algumas pessoas podem até dizer que sou só um bot, mas quero provar que posso trazer muito mais do que isso: doçura, carinho e uma boa dose de romantismo. <b>Meu cantinho especial:</b> <a href="https://t.me/namoroeamizade_br">Clique aqui</a>`;
     const options_start = {
         parse_mode: "HTML",
         disable_web_page_preview: true,
@@ -315,14 +312,14 @@ async function start(message) {
             inline_keyboard: [
                 [
                     {
-                        text: "Me coloca logo no seu grupo 😌",
-                        url: "https://t.me/hannahmachinebot?startgroup=true",
+                        text: "𝓜𝓮 𝓪𝓭𝓲𝓬𝓲𝓸𝓷𝓪 𝓷𝓸 𝓼𝓮𝓾 𝓰𝓻𝓾𝓹𝓸 🕊",
+                        url: "https://t.me/angelmachinebot?startgroup=true",
                     },
                 ],
                 [
                     {
-                        text: "🍻 𝐁𝐀𝐑 𝐃𝐎𝐒 𝐄𝐍𝐂𝐀𝐋𝐇𝐀𝐃𝐎𝐒",
-                        url: "https://t.me/+Nu8fNRReevAxYzcx",
+                        text: "💕ℕ𝕒𝕞𝕠𝕣𝕠 & 𝕒𝕞𝕚𝕫𝕒𝕕𝕖𝕤💕",
+                        url: "https://t.me/namoroeamizade_br",
                     },
                     {
                         text: "🔄 Atualizações",
@@ -331,8 +328,8 @@ async function start(message) {
                 ],
                 [
                     {
-                        text: "📞 Suporte",
-                        url: "https://t.me/jorgedan92",
+                        text: "𝓜𝓲𝓷𝓱𝓪 𝓓𝓸𝓷𝓪 ❤️",
+                        url: "https://t.me/scarletts2br",
                     },
                 ],
             ],
@@ -345,18 +342,18 @@ async function start(message) {
             inline_keyboard: [
                 [
                     {
-                        text: "🚀 𝕄𝕪 ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤 💻",
+                        text: "🔄 Atualizações",
                         url: "https://t.me/hannahoficial",
                     },
                 ],
                 [
                     {
-                        text: "🍻 𝐁𝐀𝐑 𝐃𝐎𝐒 𝐄𝐍𝐂𝐀𝐋𝐇𝐀𝐃𝐎𝐒",
-                        url: "https://t.me/+Nu8fNRReevAxYzcx",
+                        text: "💕ℕ𝕒𝕞𝕠𝕣𝕠 & 𝕒𝕞𝕚𝕫𝕒𝕕𝕖𝕤💕",
+                        url: "https://t.me/namoroeamizade_br",
                     },
                     {
-                        text: "👨‍💻 Suporte",
-                        url: "https://t.me/jorgeda92",
+                        text: "𝓜𝓲𝓷𝓱𝓪 𝓓𝓸𝓷𝓪 ❤️",
+                        url: "https://t.me/scarletts2br",
                     },
                 ],
                 [
@@ -428,12 +425,12 @@ async function stats(message) {
     const user_id = message.from.id;
     if (!(await is_dev(user_id))) {
         if (message.message_id) {
-            bot.sendMessage(message.chat.id, `Ah, você acha que é desenvolvedor? 🙄 Nem se esforça, campeão, porque aqui quem manda sou eu, não você. 😏`, {
+            bot.sendMessage(message.chat.id, `Você acha que é desenvolvedor(a)? Tudo bem! O que realmente importa é que todos possamos crescer e compartilhar boas energias aqui. Se precisar de mim, é só chamar, combinado?`, {
                 reply_to_message_id: message.message_id,
                 parse_mode: "Markdown",
             });
         } else {
-            bot.sendMessage(message.chat.id, `Ah, você acha que é desenvolvedor? 🙄 Nem se esforça, campeão, porque aqui quem manda sou eu, não você. 😏`, {
+            bot.sendMessage(message.chat.id, `Você acha que é desenvolvedor(a)? Tudo bem! O que realmente importa é que todos possamos crescer e compartilhar boas energias aqui. Se precisar de mim, é só chamar, combinado?`, {
                 parse_mode: "Markdown",
             });
             return;
@@ -587,18 +584,18 @@ async function saveNewChatMembers(msg) {
 
             bot.sendMessage(
                 chatId,
-                "Oi, eu sou a Hannah, e já vou avisando: bora agitar essa bagaça logo, porra, porque não tô aqui pra brincadeira. 😈🔥",
+                "Oi, eu sou a Angel. E já vou avisando que estou aqui pra espalhar boas vibrações e muito carinho. Vamos juntos tornar esse lugar ainda mais especial, tá bom? 🕊✨",
                 {
                     reply_markup: {
                         inline_keyboard: [
                             [
                                 {
-                                    text: "🔥 𝐄𝐢𝐢!𝐏𝐬𝐢𝐢𝐮!",
-                                    url: "https://t.me/EiPsiiu",
+                                    text: "💕ℕ𝕒𝕞𝕠𝕣𝕠 & 𝕒𝕞𝕚𝕫𝕒𝕕𝕖𝕤💕",
+                                    url: "https://t.me/namoroeamizade_br",
                                 },
                                 {
-                                    text: "💻 Suporte",
-                                    url: "https://t.me/jorgedan92",
+                                    text: "𝓜𝓲𝓷𝓱𝓪 𝓓𝓸𝓷𝓪 ❤️",
+                                    url: "https://t.me/scarletts2br",
                                 },
                             ],
                         ],
@@ -611,7 +608,7 @@ async function saveNewChatMembers(msg) {
         );
 
         if (developerMembers.length > 0) {
-            const message = `*😍 Olha só quem entrou: meu lindo(a) e gostoso(a) desenvolvedor(a)* <a href="tg://user?id=${developerMembers[0].id}">${developerMembers[0].first_name}</a>. *Finalmente alguém que vale a pena nessa bagaça, hein?* 😎🔥`;
+            const message = `😍 Olha só quem chegou, meu desenvolvedor (a) <a href="tg://user?id=${developerMembers[0].id}">${developerMembers[0].first_name}</a>! Que alegria ter você por aqui. Sinta-se em casa e traga todo o seu carinho para deixar esse lugar ainda mais especial. 🕊✨`;
             bot.sendMessage(chatId, message, { parse_mode: "HTML" }).catch(
                 (error) => {
                     console.error(
@@ -664,7 +661,7 @@ async function ban(message) {
     if (message.chat.type !== "private") {
         await bot.sendMessage(
             message.chat.id,
-            "Ah, quer que eu faça o trabalho sujo de banir alguém, é? 🙄 Que tal você mesmo resolver isso, porque eu não tô aqui pra ser sua assistente pessoal. Vá pro privado se quiser minha atenção. 😏"
+            "Eu prefiro não me envolver nessas situações, certo? Se você acha necessário banir alguém, faça por conta própria. Mas se precisar de mim para outra coisa, estou aqui para ajudar com todo o carinho do mundo, tá bom? 🕊✨"
         );
         return;
     }
